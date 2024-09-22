@@ -11,7 +11,8 @@ header {
 }
 
 .logo img {
-    height: 50px; /* Ajusta según sea necesario */
+    height: 50px;
+    /* Ajusta según sea necesario */
 }
 
 .navigation ul {
@@ -25,7 +26,8 @@ header {
 
 .navigation ul li a {
     text-decoration: none;
-    color: #262927; /* Color del enlace */
+    color: #262927;
+    /* Color del enlace */
     cursor: pointer;
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -34,9 +36,11 @@ header {
 section {
     padding: 20px;
 }
+
 .video-background {
     position: relative;
-    height: 95vh; /* Altura del video */
+    height: 95vh;
+    /* Altura del video */
     overflow: hidden;
 }
 
@@ -49,7 +53,7 @@ section {
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
 .overlay {
@@ -57,167 +61,330 @@ section {
     top: 94%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Color del texto */
+    color: white;
+    /* Color del texto */
     text-align: center;
-    text-shadow: 
-        2px 2px 0 black,   
-        -2px 2px 0 black,  
-        -2px -2px 0 black, 
+    text-shadow:
+        2px 2px 0 black,
+        -2px 2px 0 black,
+        -2px -2px 0 black,
         2px -2px 0 black;
 }
 
 .overlay h1 {
-    font-size: 3em; /* Tamaño del texto */
+    font-size: 3em;
+    /* Tamaño del texto */
 }
 
 #nosotros {
-    background-color: #f4f4f4; /* Color de fondo suave */
-    padding: 40px; /* Espaciado interno */
-    margin: 20px 0; /* Espaciado externo */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #f4f4f4;
+    /* Color de fondo suave */
+    padding: 40px;
+    /* Espaciado interno */
+    margin: 20px 0;
+    /* Espaciado externo */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
 }
 
 #nosotros h2 {
-    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
-    font-size: 2.5em; /* Tamaño grande para el encabezado */
-    color: #333; /* Color oscuro para el texto */
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    font-family: 'Montserrat', sans-serif;
+    /* Fuente moderna */
+    font-size: 2.5em;
+    /* Tamaño grande para el encabezado */
+    color: #333;
+    /* Color oscuro para el texto */
+    text-align: center;
+    /* Centrar el texto */
+    margin-bottom: 20px;
+    /* Espacio debajo del encabezado */
 }
 
 #nosotros p {
-    font-family: 'Roboto', sans-serif; /* Fuente legible para el cuerpo */
-    font-size: 1.2em; /* Tamaño del texto del párrafo */
-    line-height: 1.6; /* Espaciado entre líneas */
-    color: #555; /* Color gris oscuro para el texto */
-    max-width: 800px; /* Ancho máximo para mejorar la legibilidad */
-    margin: 0 auto; /* Centrar el párrafo en la sección */
+    font-family: 'Roboto', sans-serif;
+    /* Fuente legible para el cuerpo */
+    font-size: 1.2em;
+    /* Tamaño del texto del párrafo */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+    color: #555;
+    /* Color gris oscuro para el texto */
+    max-width: 800px;
+    /* Ancho máximo para mejorar la legibilidad */
+    margin: 0 auto;
+    /* Centrar el párrafo en la sección */
 }
 
 #productos {
-   /*  background-color: #f9f9f9; /* Color de fondo suave */ 
-    padding: 40px; /* Espaciado interno */
-    margin: 20px 0; /* Espaciado externo */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
- 
+    /*  background-color: #f9f9f9; /* Color de fondo suave */
+    padding: 40px;
+    /* Espaciado interno */
+    margin: 20px 0;
+    /* Espaciado externo */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+
 }
 
 .dropdown {
-    position: relative; /* Para posicionar el modal */
+    position: relative;
+    /* Para posicionar el modal */
 }
 
 .modal {
-    display: none; /* Ocultar el modal por defecto */
+    display: none;
+    /* Ocultar el modal por defecto */
     position: absolute;
-    background-color: white; /* Fondo blanco para el modal */
-    border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    padding: 15px; /* Espaciado interno */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    width: 200px; /* Ancho fijo para el modal */
+    background-color: white;
+    /* Fondo blanco para el modal */
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    padding: 15px;
+    /* Espaciado interno */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+    width: 200px;
+    /* Ancho fijo para el modal */
     margin-top: -4px;
     margin-left: 2rem;
 }
 
 .dropdown:hover .modal {
-    display: block; /* Mostrar el modal al hacer hover */
+    display: block;
+    /* Mostrar el modal al hacer hover */
 }
 
 .modal h4 {
-    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
-    font-size: 1.5em; /* Tamaño del encabezado del modal */
-    color: #333; /* Color oscuro para el texto */
-    margin-bottom: 10px; /* Espacio debajo del encabezado */
+    font-family: 'Montserrat', sans-serif;
+    /* Fuente moderna */
+    font-size: 1.5em;
+    /* Tamaño del encabezado del modal */
+    color: #333;
+    /* Color oscuro para el texto */
+    margin-bottom: 10px;
+    /* Espacio debajo del encabezado */
 }
 
 .modal ul {
-    list-style-type: none; /* Sin viñetas */
-    padding-left: 0; /* Sin padding izquierdo */
+    list-style-type: none;
+    /* Sin viñetas */
+    padding-left: 0;
+    /* Sin padding izquierdo */
 }
 
-.modal ul > li {
-    margin-bottom: 10px; /* Espaciado entre los elementos de la lista principal */
+.modal ul>li {
+    margin-bottom: 10px;
+    /* Espaciado entre los elementos de la lista principal */
 }
 
 .modal ul li a {
-    text-decoration: none; /* Sin subrayado en los enlaces */
-    color: #333; /* Color azul para los enlaces */
+    text-decoration: none;
+    /* Sin subrayado en los enlaces */
+    color: #333;
+    /* Color azul para los enlaces */
 }
 
 .modal ul li a:hover {
-    text-decoration: underline; /* Subrayar al pasar el mouse */
+    text-decoration: underline;
+    /* Subrayar al pasar el mouse */
 }
 
 /* Estilo para sublistas (categorías dentro de REPUESTOS) */
 .modal ul li ul {
-    list-style-type: circle; /* Estilo de lista con círculos para subcategorías */
-    margin-top: 5px; /* Espacio superior para sublistas */
-    padding-left: 20px; /* Margen izquierdo para sublistas */
+    list-style-type: circle;
+    /* Estilo de lista con círculos para subcategorías */
+    margin-top: 5px;
+    /* Espacio superior para sublistas */
+    padding-left: 20px;
+    /* Margen izquierdo para sublistas */
 }
 
 .modal ul li ul li {
-    margin-bottom: 5px; /* Espaciado entre elementos de la sublista */
+    margin-bottom: 5px;
+    /* Espaciado entre elementos de la sublista */
 }
 
 #productos h2 {
-    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
-    font-size: 2.5em; /* Tamaño grande para el encabezado */
-    color: #333; /* Color oscuro para el texto */
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    font-family: 'Montserrat', sans-serif;
+    /* Fuente moderna */
+    font-size: 2.5em;
+    /* Tamaño grande para el encabezado */
+    color: #333;
+    /* Color oscuro para el texto */
+    text-align: center;
+    /* Centrar el texto */
+    margin-bottom: 20px;
+    /* Espacio debajo del encabezado */
 }
 
 .categoria {
-    margin-top: 10vh; /* Espacio superior para la categoría */
+    margin-top: 10vh;
+    /* Espacio superior para la categoría */
 }
 
 .categoria h3 {
-    font-family: 'Montserrat', sans-serif; /* Fuente moderna para subcategoría */
-    font-size: 2em; /* Tamaño grande para subcategoría */
-    color: #444; /* Color oscuro para el texto */
+    font-family: 'Montserrat', sans-serif;
+    /* Fuente moderna para subcategoría */
+    font-size: 2em;
+    /* Tamaño grande para subcategoría */
+    color: #444;
+    /* Color oscuro para el texto */
 }
 
 .categoria h4 {
-    font-family: 'Roboto', sans-serif; /* Fuente legible para los productos */
-    font-size: 1.5em; /* Tamaño del texto del encabezado de producto */
-    color: #555; /* Color gris oscuro para el texto */
-    margin-top: 20px; /* Espacio superior para el encabezado de producto */
+    font-family: 'Roboto', sans-serif;
+    /* Fuente legible para los productos */
+    font-size: 1.5em;
+    /* Tamaño del texto del encabezado de producto */
+    color: #555;
+    /* Color gris oscuro para el texto */
+    margin-top: 20px;
+    /* Espacio superior para el encabezado de producto */
 }
 
 .categoria ul {
-    list-style-type: disc; /* Estilo de lista con viñetas */
-    margin-left: 20px; /* Margen izquierdo para la lista */
-   
+    list-style-type: disc;
+    /* Estilo de lista con viñetas */
+    margin-left: 20px;
+    /* Margen izquierdo para la lista */
+
 }
 
 .categoria li {
-    font-family: 'Roboto', sans-serif; /* Fuente legible para el texto de la lista */
-    font-size: 1.2em; /* Tamaño del texto de la lista */
-    color: #555; /* Color gris oscuro para el texto */
-    margin-bottom: 10px; /* Espacio debajo de la lista */
+    font-family: 'Roboto', sans-serif;
+    /* Fuente legible para el texto de la lista */
+    font-size: 1.2em;
+    /* Tamaño del texto de la lista */
+    color: #555;
+    /* Color gris oscuro para el texto */
+    margin-bottom: 10px;
+    /* Espacio debajo de la lista */
 }
 
 .imagenes-productos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
-  
-    
+    justify-content: center;
+
+
 }
 
 .imagenes-productos img {
-    width: 150px; /* Ancho fijo para las imágenes */
-    height: auto; /* Mantener proporción de las imágenes */
-    margin: 10px; /* Espaciado entre imágenes */
+    width: 150px;
+    /* Ancho fijo para las imágenes */
+    height: auto;
+    /* Mantener proporción de las imágenes */
+    margin: 10px;
+    /* Espaciado entre imágenes */
     border-radius: 8px;
     cursor: pointer;
     object-fit: contain;
 }
 
-.categoria-contenedor{
+.categoria-contenedor {
     display: flex;
     gap: 2rem;
+}
+
+.brand-style {
+    text-align: center;
+}
+
+.dist-style {
+    align-items: center;
+}
+
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Letras claras */
+    text-align: center; /* Centrar texto */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 40px; /* Espacio superior para separar del contenido anterior */
+}
+
+.footer-content {
+    display: flex; /* Usar flexbox para alinear columnas */
+    justify-content: space-around; /* Espacio entre columnas */
+}
+
+.contact-info, .quick-links {
+
+    margin-bottom: 5vh ;
+    
+}
+.contact-info h4 {
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna para el encabezado de enlaces rápidos */
+    font-size: 1.5em; /* Tamaño grande para el encabezado de enlaces rápidos */
+    color: #fff; /* Color blanco para el encabezado */
+    text-align: start;
+   
+}
+.contact-box{
+    display: flex;
+    gap: 2rem;
+}
+.icon{
+    width: 24px; /* Ajusta el tamaño según sea necesario */
+            height: 24px; /* Ajusta el tamaño según sea necesario
+           */
+          
+}
+
+.links{
+    margin-top: 40px;
+}
+
+.contact-info{ 
+    text-align: start;
+gap: 3px;
+display: flex;
+flex-direction: column;
+}
+
+.footer-section-left{
+    text-align: end;
+    
+    margin-right: -60vh;
+}
+
+.footer-section-right{
+    text-align: start;
+    margin-left: -60vh;
+}
+.footer-content p {
+    margin: 5px 0; /* Espaciado entre párrafos */
+    font-family: 'Roboto', sans-serif; /* Fuente legible */
+    font-size: 1em; /* Tamaño de fuente estándar */
+}
+
+.quick-links h4 {
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna para el encabezado de enlaces rápidos */
+    font-size: 1.5em; /* Tamaño grande para el encabezado de enlaces rápidos */
+    color: #fff; /* Color blanco para el encabezado */
+}
+
+.quick-links ul {
+    list-style-type: none; /* Sin viñetas en la lista */
+    padding: 0; /* Sin padding en la lista */
+}
+
+.quick-links li {
+    margin-bottom: 10px; /* Espacio debajo de cada enlace */
+}
+
+.quick-links a {
+    color: #fff; /* Color blanco para los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+}
+
+.quick-links a:hover {
+    color: blue; /* Color azul al pasar el mouse sobre los enlaces */
 }
