@@ -331,7 +331,7 @@ footer {
     display: flex;
     gap: 2rem;
 }
-.icon{
+.contact-icon{
     width: 24px; /* Ajusta el tamaño según sea necesario */
             height: 24px; /* Ajusta el tamaño según sea necesario
            */
@@ -387,4 +387,57 @@ flex-direction: column;
 
 .quick-links a:hover {
     color: blue; /* Color azul al pasar el mouse sobre los enlaces */
+}
+
+.whatsapp-icon {
+    position: fixed; /* Fija la posición del icono */
+    bottom: 20px; /* Distancia desde el fondo */
+    right: 20px; /* Distancia desde la derecha */
+    width: 60px; /* Ancho del icono */
+    height: 60px; /* Alto del icono */
+    background-color: #25d366; /* Color de fondo (opcional) */
+    border-radius: 50%; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Sombra para efecto visual */
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.icon {
+    width: 90%; /* Ajusta el tamaño del icono dentro del contenedor */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+.map-link {
+    color: #007bff; /* Color azul para el enlace */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+.map-link:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+    color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+
+.footer-divisor-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.footer-divisor{
+    border-top: 1px solid #fff;
+    margin: 20px 0;
+    width: 50%;
+}
+.phone-link {
+    color: #007bff; /* Color azul para el enlace */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.phone-link:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+    color: #0056b3; /* Color más oscuro al pasar el mouse */
 }
