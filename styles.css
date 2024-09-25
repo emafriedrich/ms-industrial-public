@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family:"Lato", sans-serif;
 }
 
 header {
@@ -7,57 +7,166 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f8f9fa;
+
 }
 
 .logo img {
   height: 50px;
 }
 
-.navigation ul {
-  list-style-type: none;
+.menu {
+  display: flex;
+  flex-direction: row;
 }
 
-.navigation ul li {
-  display: inline;
-  margin-left: 20px;
+.menu {
+  display: flex;
+  /* Alinear elementos en línea */
+  justify-content: space-around;
+  /* Espacio entre elementos */
+  background-color: #43474C;
+  /* Color de fondo del menú */
+  padding: 15px 30px;
+  /* Espaciado interno */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra del menú */
+  border-radius: 8px;
 }
 
-.navigation ul li a {
+.menu div {
+  position: relative;
+  /* Necesario para el dropdown */
+}
+
+.menu a {
+  color: white;
+  /* Color del texto */
   text-decoration: none;
-  color: #262927;
-
-  cursor: pointer;
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
+  /* Sin subrayado */
+  font-size: 18px;
+  /* Tamaño de fuente */
+  padding: 10px 15px;
+  /* Espaciado interno para los enlaces */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Transiciones suaves */
 }
 
-section {
+.menu a:hover {
+  background-color: #43474C;
+  /* Fondo azul brillante al pasar el mouse */
+  transform: scale(1.05);
+  /* Efecto de aumento al pasar el mouse */
+}
+
+.dropdown .modal {
+  display: none;
+  /* Ocultar por defecto */
+  position: absolute;
+  /* Posicionamiento absoluto */
+  top: 100%;
+  /* Colocar en el medio verticalmente */
+  left: 50%;
+  /* Colocar en el medio horizontalmente */
+  transform: translate(-50%, 0%);
+  /* Centrar el modal */
+  background-color: #FFFDD0;
+  /* Fondo crema para el modal */
+  border-radius: 8px;
+  /* Bordes redondeados del modal */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* Sombra del modal */
   padding: 20px;
+  /* Espaciado interno del modal */
+  z-index: 1000;
+  /* Asegurar que esté por encima de otros elementos */
+  width: 300px;
+  /* Ancho del modal (ajusta según sea necesario) */
 }
+
+.dropdown:hover .modal {
+  display: block;
+  /* Mostrar el modal al pasar sobre el dropdown */
+}
+
+.modal h4 {
+  font-family: 'Montserrat', sans-serif;
+  /* Fuente del encabezado del modal */
+  font-size: 1.5em;
+  /* Tamaño del encabezado */
+  color: #333;
+  /* Color del texto del encabezado */
+  margin-bottom: 15px;
+  /* Margen inferior del encabezado */
+}
+
+.modal-content {
+  padding-left: 0;
+  /* Eliminar padding por defecto */
+}
+
+.modal-item {
+  margin-bottom: 10px;
+  /* Espaciado entre elementos del modal */
+}
+
+.modal-item a {
+  color: #8B0000;
+  /* Color de texto de los enlaces en el modal (rojo oscuro) */
+}
+
+.modal-item a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  text-decoration: none;
+  /* Subrayar al pasar el mouse sobre los enlaces del modal */
+}
+
+.sub-modal {
+  margin-top: 5px;
+  /* Espaciado superior para sub-modal */
+}
+
+.sub-modal-item a {
+  color: #555;
+  /* Color más claro para los sub-elementos */
+}
+
+.sub-modal-item a:hover {
+  text-decoration: underline;
+  /* Subrayar al pasar el mouse sobre los sub-elementos */
+}
+
+section {}
 
 .video-background {
   position: relative;
-  height: 95vh;
-
   overflow: hidden;
+  height: 65vh;
+
+  width: 90%;
+border-radius: 8px;
+  background-color: #43474C;
+  margin-left: 5%;
 }
 
 .video-background video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
   transform: translate(-50%, -50%);
+
   opacity: 0.8;
 }
 
 .overlay {
   position: absolute;
-  top: 94%;
+  top: 96%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -74,9 +183,9 @@ section {
 #nosotros {
   background-color: #f4f4f4;
 
-  padding: 40px;
 
-  margin: 20px 0;
+
+
 
   border-radius: 8px;
 
@@ -95,14 +204,22 @@ section {
   margin-bottom: 20px;
 }
 
+.nosotros-box {
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
 #nosotros p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
 
   font-size: 1.2em;
 
   line-height: 1.6;
 
-  color: #555;
+  color: #333;
 
   max-width: 800px;
 
@@ -110,9 +227,11 @@ section {
 }
 
 #productos {
-  padding: 40px;
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 5%;
 
-  margin: 20px 0;
+  padding-top: 15px;
 
   border-radius: 8px;
 
@@ -123,73 +242,6 @@ section {
   position: relative;
 }
 
-.modal {
-  display: none;
-
-  position: absolute;
-  background-color: white;
-
-  border: 1px solid #ccc;
-
-  border-radius: 8px;
-
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
-  padding: 15px;
-
-  z-index: 1000;
-
-  width: 200px;
-
-  margin-top: -4px;
-  margin-left: 2rem;
-}
-
-.dropdown:hover .modal {
-  display: block;
-}
-
-.modal h4 {
-  font-family: "Montserrat", sans-serif;
-
-  font-size: 1.5em;
-
-  color: #333;
-
-  margin-bottom: 10px;
-}
-
-.modal ul {
-  list-style-type: none;
-
-  padding-left: 0;
-}
-
-.modal ul > li {
-  margin-bottom: 10px;
-}
-
-.modal ul li a {
-  text-decoration: none;
-
-  color: #333;
-}
-
-.modal ul li a:hover {
-  text-decoration: underline;
-}
-
-.modal ul li ul {
-  list-style-type: circle;
-
-  margin-top: 5px;
-
-  padding-left: 20px;
-}
-
-.modal ul li ul li {
-  margin-bottom: 5px;
-}
 
 #productos h2 {
   font-family: "Montserrat", sans-serif;
@@ -199,7 +251,7 @@ section {
   color: #333;
 
   text-align: center;
-
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -209,15 +261,17 @@ section {
 
 .categoria h3 {
   font-family: "Montserrat", sans-serif;
-
+  margin-left: 6vh;
   font-size: 2em;
 
   color: #444;
 }
 
+
+
 .categoria h4 {
   font-family: "Roboto", sans-serif;
-
+  margin-left: 6vh;
   font-size: 1.5em;
 
   color: #555;
@@ -231,12 +285,12 @@ section {
   margin-left: 20px;
 }
 
-.categoria li {
+.categoria p {
   font-family: "Roboto", sans-serif;
 
   font-size: 1.2em;
 
-  color: #555;
+  color: #333;
 
   margin-bottom: 10px;
 }
@@ -244,7 +298,24 @@ section {
 .imagenes-productos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 35%;
+}
+
+.imagenes-productos-marcas {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+
+.imagenes-productos-marcas img {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  object-fit: contain;
 }
 
 .imagenes-productos img {
@@ -259,9 +330,11 @@ section {
   object-fit: contain;
 }
 
+
 .categoria-contenedor {
   display: flex;
   gap: 2rem;
+  justify-content: space-between;
 }
 
 .brand-style {
@@ -286,13 +359,14 @@ footer {
 
 .footer-content {
   display: flex;
-
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .contact-info,
 .quick-links {
   margin-bottom: 5vh;
+text-align: center;
 }
 
 .contact-info h4 {
@@ -308,6 +382,7 @@ footer {
 .contact-box {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .contact-icon {
@@ -329,13 +404,14 @@ footer {
 
 .footer-section-left {
   text-align: end;
-
-  margin-right: -60vh;
+  margin-right: 10vh;
 }
 
 .footer-section-right {
   text-align: start;
-  margin-left: -60vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-content p {
@@ -444,4 +520,27 @@ footer {
   text-decoration: underline;
 
   color: #0056b3;
+}
+
+@media screen and (max-width: 1429px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .footer-section-left {
+    text-align: end;
+    margin-right: 0;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .overlay {
+    top: 12%;
+    width: 100%;
+    font-size: 12px;
+  }
 }
