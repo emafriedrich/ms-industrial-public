@@ -24,11 +24,11 @@ header {
   /* Alinear elementos en línea */
   justify-content: space-around;
   /* Espacio entre elementos */
-  background-color: #43474C;
+ 
   /* Color de fondo del menú */
   padding: 15px 30px;
   /* Espaciado interno */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
   /* Sombra del menú */
   border-radius: 8px;
 }
@@ -39,7 +39,8 @@ header {
 }
 
 .menu a {
-  color: white;
+  color: #43474C;
+  border:none;
   /* Color del texto */
   text-decoration: none;
   /* Sin subrayado */
@@ -54,13 +55,15 @@ header {
 }
 
 .menu a:hover {
-  background-color: #43474C;
+  border:1px solid #43474C;
+
   /* Fondo azul brillante al pasar el mouse */
   transform: scale(1.05);
   /* Efecto de aumento al pasar el mouse */
 }
 
 .dropdown .modal {
+  text-align: center;
   display: none;
   /* Ocultar por defecto */
   position: absolute;
@@ -71,23 +74,26 @@ header {
   /* Colocar en el medio horizontalmente */
   transform: translate(-50%, 0%);
   /* Centrar el modal */
-  background-color: #FFFDD0;
+background-color: #fff;
   /* Fondo crema para el modal */
   border-radius: 8px;
   /* Bordes redondeados del modal */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   /* Sombra del modal */
-  padding: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   /* Espaciado interno del modal */
   z-index: 1000;
   /* Asegurar que esté por encima de otros elementos */
-  width: 300px;
+  width: 35vh;
   /* Ancho del modal (ajusta según sea necesario) */
+  
 }
 
 .dropdown:hover .modal {
   display: block;
-  /* Mostrar el modal al pasar sobre el dropdown */
+ 
 }
 
 .modal h4 {
@@ -112,13 +118,13 @@ header {
 }
 
 .modal-item a {
-  color: #8B0000;
+  color: #43474C;
   /* Color de texto de los enlaces en el modal (rojo oscuro) */
 }
 
 .modal-item a:hover {
   text-decoration: underline;
-  color: #ffffff;
+  color: #43474C;
   text-decoration: none;
   /* Subrayar al pasar el mouse sobre los enlaces del modal */
 }
@@ -183,7 +189,7 @@ border-radius: 8px;
 #nosotros {
  
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ 
 }
 
 #nosotros h2 {
@@ -225,7 +231,7 @@ border-radius: 8px;
 
   border-radius: 8px;
 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .dropdown {
@@ -247,17 +253,23 @@ border-radius: 8px;
 
 .categoria {
   margin-top: 10vh;
+  display: flex; 
+  flex-direction: column;
 }
 
-.categoria h3 {
+.titulo-categoria {
   
   margin-left: 6vh;
   font-size: 2em;
   color: #333;
+  margin-right: 4vh;
+  width: 20vh;
 
 }
 
-
+.category-header{
+  width: 30%;
+}
 
 .categoria h4 {
   
@@ -314,8 +326,17 @@ border-radius: 8px;
   display: flex;
   gap: 2rem;
   justify-content: space-between;
+  align-items: center;
 }
 
+.categoria-box{
+  display: flex;
+
+}
+.categoria-sub-box{
+  display: flex;
+  flex-direction: column;
+}
 .brand-style {
   text-align: center;
 }
@@ -489,11 +510,19 @@ display: flex;
   color: #0056b3;
 }
 
+.mobile-menu{
+  display: none;
+}
+
 @media screen and (max-width: 1429px) {
   .footer-content {
     display: flex;
     flex-direction: column;
 
+  }
+
+  .menu{
+    display: none;
   }
 
   .footer-section-left {
@@ -510,4 +539,112 @@ display: flex;
     width: 100%;
     font-size: 12px;
   }
+
+  .categoria-contenedor{
+  display: block;
+  }
+  .imagenes-productos{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .categoria-box{
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  
+  }
+  .titulo-categoria{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .mobile-menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: end; /* Alinear los elementos al inicio */
+    width: 30vh;
+    gap: 5vh;
+}
+
+#burger-button {
+    cursor: pointer;
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: 40px; /* Ajusta el tamaño según sea necesario */
+    margin-bottom: 10px; /* Espacio entre el icono y el menú */
+    
+}
+
+.menu-content {
+  text-align: center;
+  display: none;
+  /* Ocultar por defecto */
+  position: absolute;
+  /* Posicionamiento absoluto */
+  top: 100%;
+  left: 45%;
+  /* Colocar en el medio verticalmente */
+
+  /* Colocar en el medio horizontalmente */
+  transform: translate(0%, 0%);
+  /* Centrar el modal */
+background-color: #fff;
+  /* Fondo crema para el modal */
+  border-radius: 8px;
+  /* Bordes redondeados del modal */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* Sombra del modal */
+
+  padding-right: 20px;
+  /* Espaciado interno del modal */
+  z-index: 1000;
+  /* Asegurar que esté por encima de otros elementos */
+  width: 14vh;
+  /* Ancho del modal (ajusta según sea necesario) */
+  
+}
+
+.menu-content div {
+    padding: 10px; /* Espaciado interno para cada elemento del menú */
+}
+
+.modal {
+    display: none; /* Ocultar modal por defecto */
+}
+
+.modal-content {
+    padding: 10px;
+}
+
+.modal-item {
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.sub-modal {
+    padding-left: 20px; /* Indentación para sub-modal */
+}
+
+.menu-nosotros-mobile{
+  text-decoration: none;
+}
+.menu-mobile-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-contact-button{
+  color: #fff;
+  background-color: #43474C;
+  width: 10vh;
+  height: 6vh;
+  border-radius: 28px;
+  border: none;
+  
+}
+header{
+  justify-content: space-around;
+  gap: 50%;
+}
 }
