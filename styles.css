@@ -1,5 +1,5 @@
 body {
-  font-family:Inter,Helvetica Neue,Arial, sans-serif;
+  font-family: Inter, Helvetica Neue, Arial, sans-serif;
 }
 
 header {
@@ -7,7 +7,6 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 10px 20px;
-
 }
 
 .logo img {
@@ -21,130 +20,124 @@ header {
 
 .menu {
   display: flex;
-  /* Alinear elementos en línea */
+  
   justify-content: space-around;
-  /* Espacio entre elementos */
- 
-  /* Color de fondo del menú */
-  padding: 15px 30px;
-  /* Espaciado interno */
 
-  /* Sombra del menú */
+  padding: 15px 30px;
+
   border-radius: 8px;
 }
 
 .menu div {
   position: relative;
-  /* Necesario para el dropdown */
+ 
 }
 
 .menu a {
-  color: #43474C;
-  border:none;
-  /* Color del texto */
+  color: #43474c;
+  border: none;
+ 
   text-decoration: none;
-  /* Sin subrayado */
+  
   font-size: 18px;
-  /* Tamaño de fuente */
+
   padding: 10px 15px;
-  /* Espaciado interno para los enlaces */
+ 
   border-radius: 5px;
-  /* Bordes redondeados */
+ 
   transition: background-color 0.3s ease, transform 0.3s ease;
-  /* Transiciones suaves */
+ 
 }
 
 .menu a:hover {
-  border:1px solid #43474C;
+  border: 1px solid #43474c;
 
-  /* Fondo azul brillante al pasar el mouse */
+ 
   transform: scale(1.05);
-  /* Efecto de aumento al pasar el mouse */
+  
 }
 
 .dropdown .modal {
   text-align: center;
   display: none;
-  /* Ocultar por defecto */
+
   position: absolute;
-  /* Posicionamiento absoluto */
+
   top: 100%;
-  /* Colocar en el medio verticalmente */
+
   left: 50%;
-  /* Colocar en el medio horizontalmente */
+ 
   transform: translate(-50%, 0%);
-  /* Centrar el modal */
-background-color: #fff;
-  /* Fondo crema para el modal */
+
+  background-color: #fff;
+ 
   border-radius: 8px;
-  /* Bordes redondeados del modal */
+ 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  /* Sombra del modal */
+
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  /* Espaciado interno del modal */
+
   z-index: 1000;
-  /* Asegurar que esté por encima de otros elementos */
+ 
   width: 35vh;
-  /* Ancho del modal (ajusta según sea necesario) */
-  
+ 
 }
 
 .dropdown:hover .modal {
   display: block;
- 
 }
 
 .modal h4 {
   
-  /* Fuente del encabezado del modal */
   font-size: 1.5em;
-  /* Tamaño del encabezado */
+
   color: #333;
-  /* Color del texto del encabezado */
+
   margin-bottom: 15px;
-  /* Margen inferior del encabezado */
+
 }
 
 .modal-content {
   padding-left: 0;
-  /* Eliminar padding por defecto */
+
 }
 
 .modal-item {
   margin-bottom: 10px;
-  /* Espaciado entre elementos del modal */
+ 
 }
 
 .modal-item a {
-  color: #43474C;
-  /* Color de texto de los enlaces en el modal (rojo oscuro) */
+  color: #43474c;
+ 
 }
 
 .modal-item a:hover {
   text-decoration: underline;
-  color: #43474C;
+  color: #43474c;
   text-decoration: none;
-  /* Subrayar al pasar el mouse sobre los enlaces del modal */
+
 }
 
 .sub-modal {
   margin-top: 5px;
-  /* Espaciado superior para sub-modal */
+
 }
 
 .sub-modal-item a {
   color: #555;
-  /* Color más claro para los sub-elementos */
+  
 }
 
 .sub-modal-item a:hover {
   text-decoration: underline;
-  /* Subrayar al pasar el mouse sobre los sub-elementos */
+ 
 }
 
-section {}
+section {
+}
 
 .video-background {
   position: relative;
@@ -152,8 +145,8 @@ section {}
   height: 65vh;
 
   width: 90%;
-border-radius: 8px;
-  background-color: #43474C;
+  border-radius: 8px;
+  background-color: #43474c;
   margin-left: 5%;
 }
 
@@ -187,13 +180,10 @@ border-radius: 8px;
 }
 
 #nosotros {
- 
   border-radius: 8px;
- 
 }
 
 #nosotros h2 {
-
   font-size: 2.5em;
   color: #333;
   text-align: center;
@@ -209,13 +199,9 @@ border-radius: 8px;
 }
 
 #nosotros p {
-
-
   font-size: 1.2em;
 
   line-height: 1.6;
-
- 
 
   max-width: 800px;
 
@@ -230,21 +216,14 @@ border-radius: 8px;
   padding-top: 15px;
 
   border-radius: 8px;
-
- 
 }
 
 .dropdown {
   position: relative;
 }
 
-
 #productos h2 {
- 
-
   font-size: 2.5em;
-
-  
 
   text-align: center;
   margin-top: 20px;
@@ -253,26 +232,23 @@ border-radius: 8px;
 
 .categoria {
   margin-top: 10vh;
-  display: flex; 
+  display: flex;
   flex-direction: column;
 }
 
 .titulo-categoria {
-  
   margin-left: 6vh;
   font-size: 2em;
   color: #333;
   margin-right: 4vh;
   width: 20vh;
-
 }
 
-.category-header{
+.category-header {
   width: 30%;
 }
 
 .categoria h4 {
-  
   margin-left: 6vh;
   font-size: 1.5em;
   color: #333;
@@ -302,7 +278,6 @@ border-radius: 8px;
   justify-content: center;
 }
 
-
 .imagenes-productos-marcas img {
   width: 150px;
   height: auto;
@@ -321,7 +296,6 @@ border-radius: 8px;
   object-fit: contain;
 }
 
-
 .categoria-contenedor {
   display: flex;
   gap: 2rem;
@@ -329,11 +303,10 @@ border-radius: 8px;
   align-items: center;
 }
 
-.categoria-box{
+.categoria-box {
   display: flex;
-
 }
-.categoria-sub-box{
+.categoria-sub-box {
   display: flex;
   flex-direction: column;
 }
@@ -362,7 +335,7 @@ footer {
 .contact-info,
 .quick-links {
   margin-bottom: 5vh;
-text-align: center;
+  text-align: center;
 }
 
 .contact-info h4 {
@@ -404,7 +377,7 @@ text-align: center;
 
 .footer-section-right {
   text-align: start;
-display: flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -510,7 +483,7 @@ display: flex;
   color: #0056b3;
 }
 
-.mobile-menu{
+.mobile-menu {
   display: none;
 }
 
@@ -518,10 +491,9 @@ display: flex;
   .footer-content {
     display: flex;
     flex-direction: column;
-
   }
 
-  .menu{
+  .menu {
     display: none;
   }
 
@@ -540,20 +512,19 @@ display: flex;
     font-size: 12px;
   }
 
-  .categoria-contenedor{
-  display: block;
+  .categoria-contenedor {
+    display: block;
   }
-  .imagenes-productos{
+  .imagenes-productos {
     width: 100%;
     justify-content: space-evenly;
   }
-  .categoria-box{
+  .categoria-box {
     flex-direction: column;
     margin-top: 2vh;
     margin-bottom: 2vh;
-  
   }
-  .titulo-categoria{
+  .titulo-categoria {
     width: 70%;
     margin: 0 auto;
     text-align: center;
@@ -563,88 +534,85 @@ display: flex;
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: end; /* Alinear los elementos al inicio */
+    justify-content: end; 
     width: 30vh;
     gap: 5vh;
-}
+  }
 
-#burger-button {
+  #burger-button {
     cursor: pointer;
-    width: 40px; /* Ajusta el tamaño según sea necesario */
-    height: 40px; /* Ajusta el tamaño según sea necesario */
-    margin-bottom: 10px; /* Espacio entre el icono y el menú */
-    
-}
+    width: 40px;
+    height: 40px; 
+    margin-bottom: 10px; 
+  }
 
-.menu-content {
-  text-align: center;
-  display: none;
-  /* Ocultar por defecto */
-  position: absolute;
-  /* Posicionamiento absoluto */
-  top: 100%;
-  left: 45%;
-  /* Colocar en el medio verticalmente */
+  .menu-content {
+    text-align: center;
+    display: none;
 
-  /* Colocar en el medio horizontalmente */
-  transform: translate(0%, 0%);
-  /* Centrar el modal */
-background-color: #fff;
-  /* Fondo crema para el modal */
-  border-radius: 8px;
-  /* Bordes redondeados del modal */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  /* Sombra del modal */
+    position: absolute;
 
-  padding-right: 20px;
-  /* Espaciado interno del modal */
-  z-index: 1000;
-  /* Asegurar que esté por encima de otros elementos */
-  width: 14vh;
-  /* Ancho del modal (ajusta según sea necesario) */
+    top: 100%;
+    left: 55%;
+ 
+
+
+    transform: translate(0%, 0%);
+ 
+    background-color: #fff;
+
+    border-radius: 8px;
+ 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   
-}
 
-.menu-content div {
-    padding: 10px; /* Espaciado interno para cada elemento del menú */
-}
+    padding-right: 20px;
 
-.modal {
-    display: none; /* Ocultar modal por defecto */
-}
+    z-index: 1000;
+    
+    width: 24vh;
+   
+  }
 
-.modal-content {
+  .menu-content div {
+    padding: 10px; 
+  }
+
+  .modal {
+    display: none; 
+  }
+
+  .modal-content {
     padding: 10px;
-}
+  }
 
-.modal-item {
+  .modal-item {
     margin: 5px 0;
     text-decoration: none;
-}
+  }
 
-.sub-modal {
-    padding-left: 20px; /* Indentación para sub-modal */
-}
+  .sub-modal {
+    padding-left: 20px; 
+  }
 
-.menu-nosotros-mobile{
-  text-decoration: none;
-}
-.menu-mobile-box{
-  display: flex;
-  flex-direction: column;
-}
+  .menu-nosotros-mobile {
+    text-decoration: none;
+  }
+  .menu-mobile-box {
+    display: flex;
+    flex-direction: column;
+  }
 
-.mobile-menu-contact-button{
-  color: #fff;
-  background-color: #43474C;
-  width: 10vh;
-  height: 6vh;
-  border-radius: 28px;
-  border: none;
-  
-}
-header{
-  justify-content: space-around;
-  gap: 50%;
-}
+  .mobile-menu-contact-button {
+    color: #fff;
+    background-color: #43474c;
+    width: auto;
+    height: 6vh;
+    border-radius: 28px;
+    border: none;
+  }
+  header {
+    justify-content: space-around;
+    gap: 50%;
+  }
 }
