@@ -233,7 +233,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  width: 35%;
+  width: 50%;
 }
 
 .imagenes-productos-marcas {
@@ -267,8 +267,17 @@ section {
   align-items: center;
 }
 
+.titulo-categoria-t{
+ 
+  font-size: 2.5em;
+  color: #333;
+  
+  width: 100%;
+}
+
 .categoria-box {
   display: flex;
+  flex-direction: column;
 }
 .categoria-sub-box {
   display: flex;
