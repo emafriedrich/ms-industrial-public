@@ -1,5 +1,8 @@
 body {
-  font-family: Inter, Helvetica Neue, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 header {
@@ -20,7 +23,7 @@ header {
 
 .menu {
   display: flex;
-  
+
   justify-content: space-around;
 
   padding: 15px 30px;
@@ -30,31 +33,27 @@ header {
 
 .menu div {
   position: relative;
- 
 }
 
 .menu a {
   color: #43474c;
   border: none;
- 
+
   text-decoration: none;
-  
+
   font-size: 18px;
 
   padding: 10px 15px;
- 
+
   border-radius: 5px;
- 
+
   transition: background-color 0.3s ease, transform 0.3s ease;
- 
 }
 
 .menu a:hover {
   border: 1px solid #43474c;
 
- 
   transform: scale(1.05);
-  
 }
 
 .dropdown .modal {
@@ -66,13 +65,13 @@ header {
   top: 100%;
 
   left: 50%;
- 
+
   transform: translate(-50%, 0%);
 
   background-color: #fff;
- 
+
   border-radius: 8px;
- 
+
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
   padding-bottom: 20px;
@@ -80,9 +79,8 @@ header {
   padding-right: 20px;
 
   z-index: 1000;
- 
+
   width: 35vh;
- 
 }
 
 .dropdown:hover .modal {
@@ -90,50 +88,41 @@ header {
 }
 
 .modal h4 {
-  
   font-size: 1.5em;
 
   color: #333;
 
   margin-bottom: 15px;
-
 }
 
 .modal-content {
   padding-left: 0;
-
 }
 
 .modal-item {
   margin-bottom: 10px;
- 
 }
 
 .modal-item a {
   color: #43474c;
- 
 }
 
 .modal-item a:hover {
   text-decoration: underline;
   color: #43474c;
   text-decoration: none;
-
 }
 
 .sub-modal {
   margin-top: 5px;
-
 }
 
 .sub-modal-item a {
   color: #555;
-  
 }
 
 .sub-modal-item a:hover {
   text-decoration: underline;
- 
 }
 
 section {
@@ -143,12 +132,17 @@ section {
   position: absolute;
   top: 84%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   color: white;
 
   text-align: center;
   text-shadow: 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black,
     2px -2px 0 black;
+}
+
+.overlay h1 {
+  font-size: 58px;
 }
 
 #nosotros {
@@ -504,7 +498,7 @@ footer {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: end; 
+    justify-content: end;
     width: 30vh;
     gap: 5vh;
   }
@@ -512,8 +506,8 @@ footer {
   #burger-button {
     cursor: pointer;
     width: 40px;
-    height: 40px; 
-    margin-bottom: 10px; 
+    height: 40px;
+    margin-bottom: 10px;
   }
 
   .menu-content {
@@ -524,32 +518,28 @@ footer {
 
     top: 100%;
     left: 55%;
- 
-
 
     transform: translate(0%, 0%);
- 
+
     background-color: #fff;
 
     border-radius: 8px;
- 
+
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  
 
     padding-right: 20px;
 
     z-index: 1000;
-    
+
     width: 24vh;
-   
   }
 
   .menu-content div {
-    padding: 10px; 
+    padding: 10px;
   }
 
   .modal {
-    display: none; 
+    display: none;
   }
 
   .modal-content {
@@ -562,7 +552,7 @@ footer {
   }
 
   .sub-modal {
-    padding-left: 20px; 
+    padding-left: 20px;
   }
 
   .menu-nosotros-mobile {
@@ -604,6 +594,7 @@ video {
   overflow: hidden;
   margin-top: 30px;
   border-radius: 4px;
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 500px) {
@@ -616,6 +607,10 @@ video {
     width: 100%;
     font-size: 12px;
   }
+
+  .overlay h1 {
+    font-size: 28px;
+  }
 }
 
 .video-background video {
@@ -624,5 +619,5 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This will stretch the video */
+  object-fit: fill; /* This will stretch the video */
 }
