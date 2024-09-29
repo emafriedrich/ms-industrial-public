@@ -139,31 +139,9 @@ header {
 section {
 }
 
-.video-background {
-  position: relative;
-  overflow: hidden;
-  height: 65vh;
-
-  border-radius: 8px;
-  background-color: #43474c;
-}
-
-.video-background video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-
-  transform: translate(-50%, -50%);
-
-  opacity: 0.8;
-}
-
 .overlay {
   position: absolute;
-  top: 96%;
+  top: 84%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -171,10 +149,6 @@ section {
   text-align: center;
   text-shadow: 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black,
     2px -2px 0 black;
-}
-
-.overlay h1 {
-  font-size: 3em;
 }
 
 #nosotros {
@@ -280,7 +254,7 @@ section {
   margin: 10px;
   border-radius: 8px;
   cursor: pointer;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .imagenes-productos img {
@@ -289,7 +263,7 @@ section {
   margin: 10px;
   border-radius: 8px;
   cursor: pointer;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .categoria-contenedor {
@@ -503,7 +477,7 @@ footer {
   }
 
   .overlay {
-    top: 12%;
+    top: 82%;
     width: 100%;
     font-size: 12px;
   }
@@ -609,11 +583,46 @@ footer {
   }
   header {
     justify-content: space-around;
-    gap: 50%;
   }
 }
 
 main {
   max-width: 1400px;
   margin: auto;
+}
+
+video {
+  object-fit: fill;
+}
+
+.video-background {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 41.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .video-background {
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin-top: 10px;
+  }
+
+  .overlay {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will stretch the video */
 }
