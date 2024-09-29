@@ -4,7 +4,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
@@ -144,10 +144,8 @@ section {
   overflow: hidden;
   height: 65vh;
 
-  width: 90%;
   border-radius: 8px;
   background-color: #43474c;
-  margin-left: 5%;
 }
 
 .video-background video {
@@ -192,8 +190,6 @@ section {
 
 .nosotros-box {
   margin-top: 20px;
-  width: 90%;
-  margin-left: 5%;
   padding-top: 15px;
   padding-bottom: 35px;
 }
@@ -203,7 +199,7 @@ section {
 
   line-height: 1.6;
 
-  max-width: 800px;
+  max-width: 1000px;
 
   margin: 0 auto;
 }
@@ -615,4 +611,9 @@ footer {
     justify-content: space-around;
     gap: 50%;
   }
+}
+
+main {
+  max-width: 1400px;
+  margin: auto;
 }

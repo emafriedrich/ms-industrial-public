@@ -3,115 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Sitio Web</title>
+    <title>MS Industrial</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="public/logo.png" alt="Logo" />
-      </div>
-      <nav class="navigation">
-        <div class="menu">
-          <div>
-            <a href="#nosotros">Nosotros</a>
-          </div>
-          <div class="dropdown">
-            <a href="#productos">Productos</a>
-            <div class="modal">
-              <div class="modal-content">
-                <div class="modal-item">
-                  <a href="#5"> Reductores y moto-reductores </a>
-                </div>
-                <div class="modal-item">
-                  <a href="#6">Motores Electricos</a>
-                </div>
-                <div class="modal-item">
-                  <a href="#7">Variadores de velocidad</a>
-                </div>
-                <div class="modal-item">
-                  <a href="#1">Repuestos:</a>
-                  <div class="sub-modal">
-                    <div class="modal-item">
-                      <a href="#1">Rodamientos y retenes</a>
-                    </div>
-                    <div class="modal-item">
-                      <a href="#2"> Transmisiones industriales </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-item">
-                  <a href="#4">Lubricación</a>
-                </div>
-                <div class="modal-item">
-                  <a href="#3">Herramientas</a>
-                </div>
-                <div class="modal-item">
-                  <a href="#8"> Rodillos y moto-tambores InterRool </a>
-                </div>
-                <div class="modal-item">
-                  <a href="#9"> Ventilación Industrial GATTI </a>
-                </div>
-              </div>
+    <main>
+      <header>
+        <div class="logo">
+          <img src="public/logo.png" alt="Logo" />
+        </div>
+        <nav class="navigation">
+          <div class="menu">
+            <div>
+              <a href="#nosotros">Nosotros</a>
+            </div>
+            <div class="dropdown">
+              <a href="#productos">Productos</a>
+            </div>
+            <div>
+              <a href="#contacto">Contacto</a>
             </div>
           </div>
-          <div>
-            <a href="#contacto">Contacto</a>
-          </div>
-        </div>
-        <div class="mobile-menu">
-          <div>
-            <a
-              href="https://api.whatsapp.com/send?phone=543754405161"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="mobile-menu-contact-button">Contacto</span>
-            </a>
-          </div>
-          <div>
-            <img src="public/burguer-menu.svg" alt="Menu" id="burger-button" />
-          </div>
-          <div class="menu-content" id="menu-content">
-            <div class="menu-mobile-box">
-              <div class="menu-nosotros-mobile">
-                <a href="#nosotros" style="text-decoration: none; color: #333"
-                  >Nosotros</a
-                >
-              </div>
-              <div>
-                <div id="productos-button">
-                  <a
-                    href="#productos"
-                    style="text-decoration: none; color: #333"
+          <div class="mobile-menu">
+            <div>
+              <a
+                href="https://api.whatsapp.com/send?phone=543754405161"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="mobile-menu-contact-button">Contacto</span>
+              </a>
+            </div>
+            <div>
+              <img
+                src="public/burguer-menu.svg"
+                alt="Menu"
+                id="burger-button"
+              />
+            </div>
+            <div class="menu-content" id="menu-content">
+              <div class="menu-mobile-box">
+                <div class="menu-nosotros-mobile">
+                  <a href="#nosotros" style="text-decoration: none; color: #333"
+                    >Nosotros</a
                   >
-                    productos
-                  </a>
                 </div>
                 <div>
-                  <a href="#contacto" style="text-decoration: none; color: #333"
-                    >Contacto</a
-                  >
+                  <div id="productos-button">
+                    <a
+                      href="#productos"
+                      style="text-decoration: none; color: #333"
+                    >
+                      productos
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="#contacto"
+                      style="text-decoration: none; color: #333"
+                      >Contacto</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </nav>
+      </header>
+      <div class="video-background">
+        <video autoplay muted loop>
+          <source src="public/ANIMACION.mp4" type="video/mp4" />
+          Tu navegador no soporta el video.
+        </video>
+        <div class="overlay">
+          <h1>Bienvenido a MS Industrial</h1>
         </div>
-      </nav>
-    </header>
-    <div class="video-background">
-      <video autoplay muted loop>
-        <source src="public/ANIMACION.mp4" type="video/mp4" />
-        Tu navegador no soporta el video.
-      </video>
-      <div class="overlay">
-        <h1>Bienvenido a MS Industrial</h1>
       </div>
-    </div>
-    <main>
       <section id="nosotros" class="nosotros-box">
         <h2>Nosotros</h2>
-        <br />
         <p>
           MS INDUSTRIAL es una empresa dedicada a comercializar una amplia gama
           de productos industriales como ser: rodamientos, retenes, componentes
