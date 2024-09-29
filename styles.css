@@ -237,9 +237,11 @@ section {
 }
 
 .imagenes-productos-marcas {
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
 }
 
 .imagenes-productos-marcas img {
@@ -252,8 +254,8 @@ section {
 }
 
 .imagenes-productos img {
-  width: 150px;
-  height: auto;
+  width: 170px;
+  height: 180px;
   margin: 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -264,20 +266,19 @@ section {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
-  align-items: center;
 }
 
-.titulo-categoria-t{
- 
+.titulo-categoria-t {
   font-size: 2.5em;
   color: #333;
-  
+
   width: 100%;
 }
 
 .categoria-box {
   display: flex;
   flex-direction: column;
+  max-width: 644px;
 }
 .categoria-sub-box {
   display: flex;
