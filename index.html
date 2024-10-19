@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="public/logo.png">
   </head>
   <body>
     <main>
@@ -31,8 +32,7 @@
             </div>
           </div>
           <div class="mobile-menu">
-     
-            <div style="margin-top: 20px;">
+            <div style="margin-top: 20px">
               <img
                 src="public/burguer-menu.svg"
                 alt="Menu"
@@ -41,18 +41,20 @@
             </div>
             <div class="menu-content" id="menu-content">
               <div class="menu-mobile-box">
-                <div class="menu-nosotros-mobile">
-                  <a href="#nosotros" style="text-decoration: none; color: #333"
-                    >Nosotros</a
-                  >
-                </div>
                 <div>
+                  <div class="menu-nosotros-mobile">
+                    <a
+                      href="#nosotros"
+                      style="text-decoration: none; color: #333"
+                      >Nosotros</a
+                    >
+                  </div>
                   <div id="productos-button">
                     <a
                       href="#productos"
                       style="text-decoration: none; color: #333"
                     >
-                      productos
+                      Productos
                     </a>
                   </div>
                   <div>
@@ -72,12 +74,10 @@
         <h1>Bienvenido a MS Industrial</h1>
       </div>
       <div class="video-background">
-       
         <video autoplay muted loop>
           <source src="public/ANIMACION.mp4" type="video/mp4" />
           Tu navegador no soporta el video.
         </video>
-       
       </div>
       <section id="nosotros" class="nosotros-box">
         <h2>Nosotros</h2>
@@ -524,49 +524,51 @@
         <div class="footer-section-left">
           <div class="contact-info">
             <h4>Contacto</h4>
-            <div class="contact-box">
-              <img
-                src="public/icons/location-pin-svgrepo-com.svg"
-                alt="Icono GPS"
-                class="contact-icon"
-              />
-              <p>
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=El+Ceibo+58,+Leandro+N.+Alem,+Misiones"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="map-link"
-                >
-                  Dirección: El Ceibo 58 Leandro N. Alem, Misiones
-                </a>
-              </p>
-            </div>
-            <div class="contact-box">
-              <img
-                src="public/icons/phone-svgrepo-com.svg"
-                alt="Icono
-                          Telefono"
-                class="contact-icon"
-              />
-              <p>
-                <a
-                  href="https://wa.me/543754405161"
-                  class="phone-link"
-                  target="_blank"
-                  rel="noopener
-                            noreferrer"
-                >
-                  Cel: +54 3754 405161
-                </a>
-              </p>
-            </div>
-            <div class="contact-box">
-              <img
-                src="public/icons/email-9-svgrepo-com.svg"
-                alt="Icono Email"
-                class="contact-icon"
-              />
-              <p>E-mail: info@msalem.com.ar</p>
+            <div class="contact-info-box">
+              <div class="contact-box">
+                <img
+                  src="public/icons/location-pin-svgrepo-com.svg"
+                  alt="Icono GPS"
+                  class="contact-icon"
+                />
+                <p>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=El+Ceibo+58,+Leandro+N.+Alem,+Misiones"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="map-link"
+                  >
+                    Dirección: El Ceibo 58 Leandro N. Alem, Misiones
+                  </a>
+                </p>
+              </div>
+              <div class="contact-box">
+                <img
+                  src="public/icons/phone-svgrepo-com.svg"
+                  alt="Icono
+              Telefono"
+                  class="contact-icon"
+                />
+                <p>
+                  <a
+                    href="https://wa.me/543754405161"
+                    class="phone-link"
+                    target="_blank"
+                    rel="noopener
+                noreferrer"
+                  >
+                    Cel: +54 3754 405161
+                  </a>
+                </p>
+              </div>
+              <div class="contact-box">
+                <img
+                  src="public/icons/email-9-svgrepo-com.svg"
+                  alt="Icono Email"
+                  class="contact-icon"
+                />
+                <p>E-mail: info@msalem.com.ar</p>
+              </div>
             </div>
           </div>
         </div>
@@ -590,7 +592,7 @@
       <div class="footer-divisor-box">
         <div class="footer-divisor"></div>
       </div>
-      <p>&copy; 2024 MS Industrial. Todos los derechos reservados.</p>
+      <p id="copy">&copy; 2024 MS Industrial. Todos los derechos reservados.</p>
     </footer>
     <a
       href="https://api.whatsapp.com/send?phone=543754405161"

@@ -3,6 +3,12 @@ html {
   text-size-adjust: none; /* Para otros navegadores */
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -16,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top:20px;
-  margin-top: 2rem;
+  height: 100px;
 }
 
 .logo img {
@@ -44,11 +50,12 @@ video {
   height: 100%;
   object-fit: contain;
   transform: translate(-50%, -50%);
-  opacity: 0.8;
+  opacity: 1;
 }
 .menu {
   display: flex;
   flex-direction: row;
+  gap: 20px;
 }
 
 .menu {
@@ -74,7 +81,8 @@ video {
 
   font-size: 18px;
 
-  padding: 10px 15px;
+  padding: 10px 0;
+
 
   border-radius: 5px;
 
@@ -90,10 +98,22 @@ video {
   object-fit: fill; /* This will stretch the video */
 }
 
-.menu a:hover {
-  border: 1px solid #43474c;
+.menu a:hover::after {
+  width: 100%;
+  right: 0;
+}
 
-  transform: scale(1.05);
+.menu a::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #7C7E81;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+  bottom: -3px;
 }
 
 .dropdown .modal {
@@ -165,15 +185,10 @@ video {
   text-decoration: underline;
 }
 
-section {
-}
 
 .overlay {
-  position: absolute;
 
-  left: 50%;
   width: 100%;
-  transform: translate(-50%, -50%);
   color: white;
 
   text-align: center;
@@ -220,12 +235,7 @@ section {
 
 #productos {
   margin-top: 20px;
-  width: 90%;
-  margin-left: 5%;
-
-  padding-top: 15px;
-
-  border-radius: 8px;
+  margin: 0 auto;
 }
 
 .dropdown {
@@ -244,6 +254,7 @@ section {
   margin-top: 10vh;
   display: flex;
   flex-direction: column;
+  margin: 0 1rem 3rem 1rem;
 }
 
 .titulo-categoria {
@@ -291,7 +302,7 @@ section {
 }
 
 .imagenes-productos-marcas img {
-  width: 150px;
+  width: 110px;
   height: auto;
   margin: 10px;
   border-radius: 8px;
@@ -310,15 +321,12 @@ section {
 
 .categoria-contenedor {
   display: flex;
-  gap: 2rem;
   justify-content: space-between;
 }
 
 .titulo-categoria-t {
   font-size: 2.5em;
   color: #333;
-
-  width: 100%;
 }
 
 .categoria-box {
@@ -354,7 +362,7 @@ footer {
 
 .contact-info,
 .quick-links {
-  margin-bottom: 5vh;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -377,10 +385,8 @@ footer {
 }
 
 .links {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 .contact-info {
@@ -485,7 +491,7 @@ footer {
 
 .footer-divisor {
   border-top: 1px solid #fff;
-  margin: 20px 0;
+  margin-bottom: 20px;
   width: 50%;
 }
 
@@ -505,6 +511,7 @@ footer {
 
 .mobile-menu {
   display: none;
+  position: relative;
 }
 
 @media screen and (max-width: 1429px) {
@@ -576,9 +583,8 @@ footer {
 
     position: absolute;
 
-    top: 100%;
-    left: 55%;
-
+    top: 60px;
+    right: 0;
     transform: translate(0%, 0%);
 
     background-color: #fff;
@@ -587,11 +593,9 @@ footer {
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
-    padding-right: 20px;
-
     z-index: 1000;
 
-    width: 24vh;
+    width: auto;
   }
 
   .menu-content div {
@@ -636,6 +640,7 @@ footer {
   }
   .nosotros p{
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 
@@ -655,7 +660,7 @@ video {
   position: relative;
 /*   padding-top: 41.25%; /* 16:9 Aspect Ratio */ 
   overflow: hidden;
-  margin-top: 13vh;
+  margin-top: 4rem;
   border-radius: 4px;
   opacity: 0.7;
 }
@@ -664,6 +669,39 @@ video {
   .video-background {
   /*   padding-top: 56.25%; /* 16:9 Aspect Ratio */ 
     margin-top: 15vh;
+  }
+
+  .links p a{
+    font-size: 15px;
+  }
+
+  .contact-info {
+    padding-top: 20px;
+  }
+
+  .titulo-categoria-t {
+    font-size: 1.9rem;
+    color: #333;
+  }  
+  
+  #copy {
+    padding-bottom: 20px;
+  }
+
+  .contact-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+
+  .video-background {
+    margin-top: 3rem;
+  }
+
+  .imagenes-productos img {
+    width: 140px;
+    height: 150px;
   }
 
   .overlay {
@@ -682,12 +720,13 @@ video {
   .footer-content p{
     font-size: 0.7rem;
   }
-  .whatsapp-icon {
+  /* .whatsapp-icon {
     bottom: 10%;
     right: 15%;
-  }
+  } */
   #nosotros p{
     margin-left: 1rem;
+    margin-right: 1rem;
   }
   #header {
     margin-top: 0;
